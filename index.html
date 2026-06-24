@@ -3,38 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Csc 104 dashboard</title>
+    <title>Contact Form</title>
 </head>
 <body>
-    <header>
-        <h1>my head is big</h1>
+    
+<center>
+     <h1><strong>Contact Us</strong></h1>
+</center>
+<hr>
 
-    <title>CSC 122 Learning Dashboard</title>
-</head>
-<body>
-    <header>
-        <h1>CSC 122</h1>
+     <strong>
+    <form action="submit_form.php" method="POST">
 
-    </header>
 
-    <main>
-        <section>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <br><br>
 
-            <h2>Contact Us </h2>
-            <p>My name is Sulaiman Victor</p>
 
-            <h2>Assignments</h2>
-            <p>Assignments are due on Friday at 5:00 PM.</p>
-        </section>
-    </main>
+          <p>Please select your preferred contact method:</p>
+        <input type="radio" id="email" name="contact_method" value="email" required>
+        <label for="email_contact">Email</label> 
+        <br>
 
-    <footer>
 
-        <p>Submit</p>
+        <input type="radio" id="phone" name="contact_method" value="phone">
+        <label for="phone_contact">Phone</label>
+        <br><br>
 
-        <p>Faculty of Computing</p>
 
-    </footer>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+        <br><br>
+         <label for="Phone number">Phone:</label>
+         <input type="tel" id="Phone number" name="phone" required placeholder="Enter your phone number">
+
+         <br><br>
+
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required placeholder="Enter your message"></textarea>
+        <br><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+    </strong>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            
+
+        }
+        center {
+            background-color: #fff;
+            
+        }
+        form {
+            background-color: #fff;
+            
+
+        }
+    </style>
+
+
 </body>
 </html>
